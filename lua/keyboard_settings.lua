@@ -34,7 +34,7 @@ vim.g.mapleader = " "
 
 vim.keymap.set('n', '<LEADER>pv', ':Vex<CR>', { desc = 'Open vertical window' })
 
-vim.keymap.set('n', '<LEADER><CR>', ":so ~/.config/nvim/init.lua", { desc = "Source init.lua" })
+vim.keymap.set('n', '<LEADER><CR>', ":so ~/.config/nvim/init.lua<CR>", { desc = "Source init.lua" })
 
 vim.keymap.set('n', "<C-p>", "GFiles<CR>", { desc = "Find files in nearest .git folder via Telescope" })
 vim.keymap.set('n', "<LEADER>pf", ":Files<CR>", { desc = "Open files in filesystem via Telescope" })
