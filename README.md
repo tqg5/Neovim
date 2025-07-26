@@ -1,4 +1,9 @@
-# 💤 LazyVim
+# Neovim Config
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+###Plugins
+
+    - blink.cmp
+        - Install rustup
+        - If you need to update, remove Cargo lock file, cd into the plugin's directory, run:
+        **rustup update**
+        **cargo build --release**

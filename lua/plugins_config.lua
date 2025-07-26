@@ -13,7 +13,6 @@ vim.call("plug#end")
 vim.lsp.enable("ts_ls")
 
 require("blink.cmp").setup({
-
     -- use a release tag to download pre-built binaries
     -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
     -- build = 'cargo build --release',
@@ -22,8 +21,7 @@ require("blink.cmp").setup({
 
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
-    version = '1.*',
-    dependencies = { 'rafamadriz/friendly-snippets' },
+
     -- 'default' (recommended) for mappings similar to built-in completions (C-y to accept)
     -- 'super-tab' for mappings similar to vscode (tab to accept)
     -- 'enter' for enter to accept
@@ -58,9 +56,13 @@ require("blink.cmp").setup({
     -- when the Rust fuzzy matcher is not available, by using `implementation = "prefer_rust"`
     --
     -- See the fuzzy documentation for more information
-    fuzzy = { implementation = "prefer_rust_with_warning" },
-
-    opts_extend = { "sources.default" }
+    fuzzy = {
+        implementation = "prefer_rust_with_warning",
+        prebuilt_binaries = {
+            download = true,
+            ignore_version_mismatch = false
+        }
+    },
 })
 
 

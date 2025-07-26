@@ -24,6 +24,10 @@ vim.opt.cpoptions:append("I")
 
 vim.opt.termguicolors = true
 
+vim.diagnostic.config({
+    virtual_text = true
+})
+
 --keymaps
 
 vim.g.mapleader = " "
@@ -51,4 +55,4 @@ vim.keymap.set('n', "<LEADER>fh", "<CMD>Telescope help_tags<CR>")
 vim.keymap.set('n', "<LEADER>fb", "<CMD>Telescope bufffers<CR>")
 
 vim.keymap.set('v', "K", ":m '<-2<CR>gv=gv")
-vim.keymap.set('v', "j", ":m '>+1<cr>gv=gv")
+vim.keymap.set('v', "J", ":m '>+1<cr>gv=gv")
