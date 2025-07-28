@@ -4,7 +4,7 @@ vim.call("plug#begin", "~/.config/nvim/plugged")
 
 	Plug("ayu-theme/ayu-vim")
 	Plug("rafamadriz/friendly-snippets")
-	Plug("Saghen/blink.cmp")
+	Plug("Saghen/blink.cmp", { tag = "v1.6.0" })
     Plug("nvim-lua/plenary.nvim")
 	Plug("nvim-telescope/telescope.nvim")
 
