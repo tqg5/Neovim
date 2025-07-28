@@ -46,7 +46,7 @@ vim.keymap.set('v', "<LEADER>p", "_dP", { desc = "" })
 vim.keymap.set('v', "<LEADER>y", "+y", { desc = "" })
 
 vim.keymap.set('n', "<LEADER><", ":bprev<CR>", { desc = "Move backwards 1 buffer" })
-vim.keymap.set('n', "<LEADER>>", ":bext<CR>", { desc = "Move forwards 1 buffer" })
+vim.keymap.set('n', "<LEADER>>", ":bnext<CR>", { desc = "Move forwards 1 buffer" })
 
 -- Find files using Telescope ccommand-lind sugar.
 vim.keymap.set('n', "<LEADER>ff", "<CMD>Telescope find_files<CR>")

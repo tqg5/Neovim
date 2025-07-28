@@ -5,6 +5,7 @@ vim.call("plug#begin", "~/.config/nvim/plugged")
 	Plug("ayu-theme/ayu-vim")
 	Plug("rafamadriz/friendly-snippets")
 	Plug("Saghen/blink.cmp")
+    Plug("nvim-lua/plenary.nvim")
 	Plug("nvim-telescope/telescope.nvim")
 
 vim.call("plug#end")
@@ -64,6 +65,8 @@ require("blink.cmp").setup({
         }
     },
 })
+
+require("telescope").setup({})
 
 
 vim.cmd([[
