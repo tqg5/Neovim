@@ -32,7 +32,10 @@ vim.diagnostic.config({
 
 vim.g.mapleader = " "
 
-vim.keymap.set('n', '<LEADER>pv', ':Vex<CR>', { desc = 'Open vertical window' })
+--vim.keymap.set('n', '<LEADER>vs', ':Vex<CR>', { desc = 'Open vertical window in NetRW' })
+--vim.keymap.set('n', '<LEADER>hs', ':Sex<CR>', { desc = 'Open horizonal window in NetRW' })
+vim.keymap.set('n', '<LEADER>vs', ':vsplit | Dirvish<CR>', { desc = 'Open vertical window in Dirvish' })
+vim.keymap.set('n', '<LEADER>hs', ':split | Dirvish<CR>', { desc = 'Open horizonal window in Dirvish' })
 
 vim.keymap.set('n', '<LEADER><CR>', ":so ~/.config/nvim/init.lua<CR>", { desc = "Source init.lua" })
 
@@ -42,7 +45,7 @@ vim.keymap.set('n', "<LEADER>pf", ":Files<CR>", { desc = "Open files in filesyst
 vim.keymap.set('n', "<C-j>", ":cnext<CR>", { desc = "Cycles forward in the quickfix list" })
 vim.keymap.set('n', "<C-k>", ":cprev<CR>", { desc = "Cycles backward in the quickfix list" })
 
-vim.keymap.set('v', "<LEADER>p", "_dP", { desc = "" })
+vim.keymap.set('v', "<LEADER>p", "_dP", { desc = "Paste yanked text one line under and move there" })
 vim.keymap.set('v', "<LEADER>y", "+y", { desc = "" })
 
 vim.keymap.set('n', "<LEADER><", ":bprev<CR>", { desc = "Move backwards 1 buffer" })

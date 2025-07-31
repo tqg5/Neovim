@@ -7,6 +7,12 @@ vim.call("plug#begin", "~/.config/nvim/plugged")
 	Plug("Saghen/blink.cmp", { tag = "v1.6.0" })
     Plug("nvim-lua/plenary.nvim")
 	Plug("nvim-telescope/telescope.nvim")
+<<<<<<< Updated upstream
+=======
+    Plug("fsouza/prettierd")
+    Plug("stevearc/conform.nvim")
+    Plug("justinmk/vim-dirvish")
+>>>>>>> Stashed changes
 
 vim.call("plug#end")
 
