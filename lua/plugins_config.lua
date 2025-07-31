@@ -18,6 +18,8 @@ vim.lsp.enable("ts_ls")
 vim.lsp.enable("gopls")
 vim.lsp.enable("lua_ls")
 
+require("conform_settings")
+
 require("blink.cmp").setup({
     -- use a release tag to download pre-built binaries
     -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
