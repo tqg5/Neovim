@@ -7,12 +7,14 @@ vim.call("plug#begin", "~/.config/nvim/plugged")
 	Plug("Saghen/blink.cmp", { tag = "v1.6.0" })
     Plug("nvim-lua/plenary.nvim")
 	Plug("nvim-telescope/telescope.nvim")
+    Plug("fsouza/prettierd")
+    Plug("stevearc/conform.nvim")
 
 vim.call("plug#end")
 
 --vim.lsp.config("ts_ls")
 vim.lsp.enable("ts_ls")
-
+require("conform_settings")
 require("blink.cmp").setup({
     -- use a release tag to download pre-built binaries
     -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
