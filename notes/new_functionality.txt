@@ -1,0 +1,1 @@
+Ability to go to hovered over package path

@@ -10,6 +10,7 @@ return {
         hostInfo = 'neovim',
         preferences = {
             includeCompletionsForModuleExports = true,
+            includeCompletionsForImportStatements = true,
             includeCompletionsWithSnippetText = true,
         },
     },
