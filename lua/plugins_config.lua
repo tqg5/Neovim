@@ -18,7 +18,13 @@ vim.call("plug#end")
 
 --vim.lsp.config("ts_ls")
 vim.lsp.enable("ts_ls")
+<<<<<<< Updated upstream
 
+=======
+vim.lsp.enable("gopls")
+
+require("conform_settings")
+>>>>>>> Stashed changes
 require("blink.cmp").setup({
     -- use a release tag to download pre-built binaries
     -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust

@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install git make cmake npm rustup cargo
+sudo apt install git make cmake npm rustup cargo golang-go
 npm install -g typescript typescript-language-server
 git clone https://github.com/neovim/neovim
 cd neovim
