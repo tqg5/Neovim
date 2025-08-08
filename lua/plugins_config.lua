@@ -10,6 +10,9 @@ vim.call("plug#begin", "~/.config/nvim/plugged")
     Plug("fsouza/prettierd")
     Plug("stevearc/conform.nvim")
     Plug("justinmk/vim-dirvish")
+    Plug("MunifTanjim/nui.nvim")
+    Plug("nvim-tree/nvim-web-devicons")
+    Plug("nvim-neo-tree/neo-tree.nvim")
 
 vim.call("plug#end")
 
@@ -19,6 +22,7 @@ vim.lsp.enable("gopls")
 vim.lsp.enable("lua_ls")
 
 require("conform_settings")
+require("neo-tree")
 
 require("blink.cmp").setup({
     -- use a release tag to download pre-built binaries
